@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/images.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form-title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.limit-info {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    resize: none; /* Prevents user from stretching the box */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #00d2ff;
+}
+
+.counter-container {
+    text-align: right;
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.warning {
+    color: #ff8fa3;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
